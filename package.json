@@ -1,0 +1,27 @@
+{
+  "name": "workingview",
+  "version": "1.0.0",
+  "description": "Undefined",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olirrvt/landingpage.git"
+  },
+  "author": "Taylor Oliveira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olirrvt/landingpage/issues"
+  },
+  "homepage": "https://github.com/olirrvt/landingpage#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}

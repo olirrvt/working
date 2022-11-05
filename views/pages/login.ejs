@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("../partials/head") %> 
+</head>
+<body>
+
+    <a href="/"> <img src="../img/mundoAzul_logo.png" class="cabecalho-imagem-voltar"> </a>
+
+    <div class="container-principal">
+
+        <!-- Outra tela de login -->
+        
+          <div class="login-formulario">
+        
+            <div class="conteudo-login-secundario">
+      
+              <div class="conteudo-titulo-login">
+                <h1 class="h1-login">Login</h1>
+                <spam style="color: gray;">
+                  Seja muito bem-vindo! faça o seu login e aproveite os nossos <br>
+                  recursos!
+                </spam>
+              </div>
+                   
+              <form class="formulario-login">
+      
+                <label>E-mail</label>
+                <br>
+                <input class="input-login" type="email" name="UserEmail" value="" placeholder="Digite o seu email...">
+                <p></p>
+      
+                <label for="passwordUser">Senha</label>
+                <br>
+                <input class="input-login" type="password" name="passwordUser" value="" placeholder="Digite sua senha..."> 
+                <p></p>
+      
+      
+                <a href="/login2">
+                  <button id="btn-login-formulario" class="button-login" type="button">Continuar</button>
+                </a>
+                
+              </form>
+      
+            </div>
+      
+            
+            <div class="msg-alert">
+      
+              <div>
+      
+                
+                <span style="color: rgb(156, 154, 154); font-family: 'Sarala', sans-serif;;">Não possui uma conta? <a class="link-login" href="/cadastro" style="cursor: pointer;">Cadastro </a> </span>
+              </div>
+      
+            </div>
+      
+          </div>
+        </div>
+    
+</body>
+</html>

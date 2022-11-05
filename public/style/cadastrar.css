@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+/* pattern hover: #0071B5 */
+
+* {
+  /* color: white; */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* cadastro area */
+
+.container-principal {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.cadastro-formulario {
+  background: #fdfdfd;
+  border-radius: 10px;
+  padding: 70px;
+  max-width: 90%;
+}
+
+/* .cadastro-secundario {
+  background: #0071B5;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 70px;
+} */
+
+/* Formulario */
+
+.conteudo-cadastro-secundario {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.h1-cadastro {
+  font-family: 'Righteous', cursive;
+  color: #0071B5;
+  cursor: pointer;
+  /* transition: 
+  all 450ms; */
+}
+
+/* .h1-cadastro:hover {
+  color: #1C2842;
+  font-size: 35pt;
+  transition: 
+  all 450ms;
+} */
+
+.formulario-cadastro {
+  display: flex;
+  margin-top: 27px;
+}
+
+.alerta-validation {
+  display: none;
+  color: #9b111e;
+  font-family: 'Sarala', sans-serif;
+  border-left: 2px solid #9b111e;
+  background: #e7d2d4;
+  padding-left: 5px;
+  margin-bottom: 5px;
+  width: 50%;
+}
+
+.input-cadastro {
+  font-family: 'Sarala', sans-serif;
+  border-radius: 5px;
+  border: none;
+  border: 2px solid #d1d8df;
+  background-color: #d1d8df;
+  padding: 4px;
+  width: 20rem;
+  max-width: 76%;
+  transition: 
+  all 450ms;
+}
+
+.input-cadastro:focus {
+  background-color: #909394;
+  color: white;
+  transition: 
+  all 450ms;
+}
+
+.input-cadastro:focus::placeholder {
+  color: #d1d8df;
+  transition: 
+  all 450ms;
+}
+
+label {
+  font-family: 'Sarala', sans-serif;
+  color: rgb(97, 95, 95);
+}
+
+.button-cadastro {
+  font-family: 'Righteous', cursive;
+  margin-top: 8px;
+  border: none;
+  border-radius: 9px;
+  background: #0071B5;
+  color: #d1d8df;
+  padding: 8px;
+  width: 10rem;
+  transition: 
+  all 450ms ease-in-out;
+}
+
+.button-cadastro:hover {
+  width: 15rem;
+  background: #008000;
+  border-radius: 11px;
+  transition: 
+  all 450ms ease-in-out;
+}
+
+.msg-alert {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.link-senha {
+  font-family: 'Righteous', cursive;
+  color: rgb(156, 154, 154);
+  transition: 
+  all 450ms;
+}
+
+.link-senha:hover {
+  color: #1C2842;
+  transition: 
+  all 450ms;
+}
+
+.link-cadastro {
+  font-family: 'Righteous', cursive;
+  color: #0071B5;
+  transition: 
+  all 450ms;
+}
+
+.link-cadastro:hover {
+  color: #1C2842;
+  transition: 
+  all 450ms;
+}
