@@ -23,14 +23,14 @@ app.get('/login', (request, response) => {
     response.render('pages/login', { importStyle, indexStyle })
 });
 
-app.get('/recrutar', (request, response) => {
-    const importStyle = "../style/recrutar.css"
+app.get('/empresas', (request, response) => {
+    const importStyle = "../style/empresas.css"
     const indexStyle = "../style/index.css"
-    response.render('pages/recrutar', { importStyle, indexStyle })
+    response.render('pages/empresas', { importStyle, indexStyle })
 });
 
-app.get('/curriculos', (request, response) => {
-    response.render('pages/curriculos')
+app.get('/vagas', (request, response) => {
+    response.render('pages/vagas')
 });
 
 app.listen(port, () => {

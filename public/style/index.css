@@ -16,8 +16,6 @@ html {
 }
 
 body {
-    /* background: linear-gradient
-    (68.15deg, #000000 16.62%, #003090 85.61%); */
     display: flex;
     flex-direction: column;
     min-height: 100%;
@@ -51,12 +49,13 @@ body {
 
 .cabecalho {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    align-items: baseline;
     padding: 24px;
     width: 100%;
+    margin: 0 0 -3rem;
     background-color: white;
+    z-index: 4;
+    justify-content: space-around;
 }
 
 .cabecalho-menu {
@@ -274,6 +273,31 @@ body {
     --bs-gradient: none;
 } */
 
+.container-banner {
+    background: linear-gradient(90deg, rgba(0,113,181,1) 15%, 
+    rgba(41,157,226,1) 41%, 
+    rgba(94,183,233,1) 76%, 
+    rgba(0,113,181,1) 100%);
+    height: 22rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteudo-escrito-banner {
+    margin: 5rem 2rem 0rem 8rem;
+}
+
+.conteudo-imagem-banner {
+    margin: 7rem 9rem 0 20rem;
+}
+
+.titulo-banner-1,
+.subtitulo-banner-1 {
+    font-family: 'Sarala', sans-serif;
+    font-weight: bolder;
+    color: #f4f4f5;
+}
+
 .conteudo-principal-imagem {
     width: 275px;
     height: 275px;
@@ -330,6 +354,10 @@ body {
 /* Responsividade da tela inicial */
 
 @media screen and (max-width: 1047px) {
+
+    .container-banner {
+        display: none;
+    }
 
     .conteudo-principal {
         margin-top: 105px;
