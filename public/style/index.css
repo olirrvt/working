@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
-/* pattern hover: #0071B5 */
+/* pattern hover: #0071B5, #57A7FF, #ACD4F7 */
 
 * {
     padding: 0;
@@ -27,23 +27,11 @@ body {
 /* TELA DE LOGIN E CADASTRO */
 
 .cabecalho-imagem-voltar {
-    background-color: #d1d8df;
-    border-radius: 90%;
-    margin-left: 1rem;
-    margin-top: 1rem;
-    width: 60px;
+    margin: 1rem 0 0 1rem;
+    width: 4rem;
     max-width: 20%;
-    height: 60px;
-    transition: 
-    all 350ms;
-  }
-
-  .cabecalho-imagem-voltar:hover {
-    width: 62px;
-    height: 62px;
-    transition: 
-    all 350ms;
-  }
+    height: 4rem;
+}
 
   /* TELA PRINCIPAL */
 
@@ -61,16 +49,17 @@ body {
 .cabecalho-menu {
     display: flex;
     list-style: none;
-    gap: 4rem;
+    gap: 2rem;
 }
 
 .cabecalho-menu-item {
     font-family: 'Sarala', sans-serif;
     font-weight: 400;
     font-size: 17px;
+    font-weight: bolder;
     text-decoration: none;
     border: 2px solid white;
-    border-bottom: 2px solid #0071B5;
+    border-bottom: 2px solid #57A7FF;
     padding: 10px;
     color: #050404;
     transition: 
@@ -79,7 +68,7 @@ body {
 
 .cabecalho-menu-item:hover {
     color: #f4f4f5;
-    background-color: #0071B5;
+    background-color: #57A7FF;
     border-radius: 5px;
     transition: 
     all 450ms ease-in-out;
@@ -273,23 +262,24 @@ body {
 }
 
 .conteudo-escrito-banner {
-    margin: 3rem 2rem 0rem 8rem;
+    margin: 2rem 0rem 0rem 7rem;
 }
 
 .conteudo-imagem-banner {
-    margin: 2rem 15rem 0 0;
+    margin: 0rem 21rem 0 0;
+    z-index: 4;
 }
 
 .titulo-banner-1 {
     font-family: cursive, sans-serif;
     font-weight: bolder;
-    color: #0071B5;
+    color: #57A7FF;
 }
 
 .subtitulo-banner-1 {
     font-family: 'Sarala', sans-serif;
     font-weight: bolder;
-    color: #0071B5;  
+    color: #57A7FF;  
 }
 
 .imagem-banner {
@@ -298,18 +288,8 @@ body {
 }
 
 .conteudo-principal-imagem {
-    width: 275px;
-    height: 275px;
-    cursor: pointer;
-    transition: 
-    all 350ms ease-in-out;
-}
-
-.conteudo-principal-imagem:hover {
-    width: 225px;
-    height: 225px;
-    transition: 
-    all 350ms ease-in-out;
+    height: 24vh;
+    width: 26vh;
 }
 
 .conteudo {
