@@ -186,8 +186,18 @@ body {
 }
 
 .cabecalho-imagem {
-    width: 10rem;
-    height: 10rem;
+    width: 6rem;
+    height: 6rem;
+}
+
+.cabecalho-imagem-responsivo {
+    width: 4rem;
+    height: 4rem;
+}
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+    margin: 0 1rem 0 0;
 }
 
 .campo-pesquisar-principal {
@@ -262,7 +272,10 @@ body {
 }
 
 .conteudo-escrito-banner {
-    margin: 2rem 0rem 0rem 7rem;
+    margin: 1rem 0 0 9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .conteudo-imagem-banner {
@@ -273,13 +286,27 @@ body {
 .titulo-banner-1 {
     font-family: cursive, sans-serif;
     font-weight: bolder;
+    font-size: 22pt;
     color: #57A7FF;
 }
 
 .subtitulo-banner-1 {
     font-family: 'Sarala', sans-serif;
     font-weight: bolder;
+    font-size: 15pt;
     color: #57A7FF;  
+}
+
+.lista-empregos-banner {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    margin: 2rem 1rem 0 0;
+}
+
+.item-lista-banner {
+    width: 9vh;
+    height: 16vh;
 }
 
 .imagem-banner {
