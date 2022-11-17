@@ -61,7 +61,7 @@ body {
 .cabecalho-menu {
     display: flex;
     list-style: none;
-    gap: 32px;
+    gap: 6rem;
 }
 
 .cabecalho-menu-item {
@@ -274,10 +274,11 @@ body {
 } */
 
 .container-banner {
-    background: linear-gradient(90deg, rgba(0,113,181,1) 15%, 
+    /* background: linear-gradient(90deg, rgba(0,113,181,1) 15%, 
     rgba(41,157,226,1) 41%, 
     rgba(94,183,233,1) 76%, 
-    rgba(0,113,181,1) 100%);
+    rgba(0,113,181,1) 100%); */
+    background: #ffffff;
     height: 22rem;
     display: flex;
     justify-content: space-between;
@@ -295,7 +296,12 @@ body {
 .subtitulo-banner-1 {
     font-family: 'Sarala', sans-serif;
     font-weight: bolder;
-    color: #f4f4f5;
+    color: #0071B5;
+}
+
+.imagem-banner-svg {
+    width: 11rem;
+    height: 11rem;
 }
 
 .conteudo-principal-imagem {
@@ -319,8 +325,7 @@ body {
 }
 
 .conteudo-principal {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 10rem 0 10rem 0;
     display: flex;
     flex-direction: row;
     align-items: center;
