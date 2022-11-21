@@ -30,7 +30,9 @@ app.get('/empresas', (request, response) => {
 });
 
 app.get('/vagas', (request, response) => {
-    response.render('pages/vagas')
+    const importStyle = "../style/vagas.css"
+    const indexStyle = "../style/index.css"
+    response.render('pages/vagas', {importStyle, indexStyle})
 });
 
 app.listen(port, () => {

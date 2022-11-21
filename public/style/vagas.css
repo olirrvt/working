@@ -1,0 +1,88 @@
+.conteudo-vagas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-vagas {
+    background: #ffff;
+    margin: 10rem 0 0 0;
+    width: 40rem;
+    height: 20rem;
+    box-shadow: #0000007a -5px 7px 20px 4px;
+}
+
+.cabecalho-vagas {
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.titulo-cabecalho-card {
+    color: #57A7FF;
+    font-weight: bolder;
+    font-size: 20pt;
+    margin: 5px 0px 4px 23px;
+}
+
+.conteudo-nome-empresa {
+    color: #424242;
+    font-weight: bolder;
+    font-size: 11pt;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.container-salario {
+    margin: 12px 0 0 0;
+}
+
+.conteudo-salario-card {
+    font-size: 13pt;
+    font-weight: 500;
+}
+
+.conteudo-localizacao-card {
+    font-size: 11pt;
+    font-weight: 400;
+}
+
+/* Corpo do Card */
+
+.corpo-do-card {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 0 15px;
+}
+
+.container-descricao-vaga {
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo-descricao-card {
+    font-size: 12pt;
+    font-weight: 400;
+}
+
+.container-botao {
+    margin: 20px 0 0 7px;
+}
+
+.btn-candidato {
+    background: #57A7FF;
+    color: #ffff;
+    font-weight: 600;
+    border: none;
+    box-shadow: #000 1px 2px 3px 0px;
+    padding: 7px;
+    border-radius: 6px;
+    transition: all 450ms ease-in-out;
+}
+
+.btn-candidato:hover {
+    background: #008000;
+    transition: all 450ms ease-in-out;
+}
