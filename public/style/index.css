@@ -342,21 +342,54 @@ body {
 .conteudo-principal-escrito-titulo {
     font-family: 'Righteous', cursive;
     font-weight: 400;
-    font-size: 64px;
+    font-size: 40pt;
     color: #FFF2E7;
     animation: changeColor 6s infinite;
-     transition: 
-    all 450ms ease-in-out;
+    transition: 
+    all 600ms ease-in-out;
 }
 
-.conteudo-principal-escrito-titulo:hover {
-    color: #0071B5;
-    font-size: 69px;
-    transition: 
-    all 450ms ease-in-out;
+@keyframes changeColor {
+    0% {
+
+        color: #57A7FF;
+    }
+
+    50% {
+        color: #fff
+    }
+
+    100% {
+        color: #57A7FF;
+    }
 }
+
 
 /* Responsividade da tela inicial */
+
+@media screen and (max-width: 1424px) {
+
+    .conteudo-imagem-banner {
+        margin: 0rem 15rem 0 0;
+        z-index: 4;
+    }
+}
+
+@media screen and (max-width: 1296px) {
+    
+    .conteudo-imagem-banner {
+        margin: 0rem 11rem 0 0;
+        z-index: 4;
+    }
+}
+
+@media screen and (max-width: 1111px) {
+    
+    .conteudo-imagem-banner {
+        margin: 2rem 6rem 0 0;
+        z-index: 4;
+    }
+}
 
 @media screen and (max-width: 1047px) {
 
@@ -425,17 +458,17 @@ body {
 .conteudo-principal-escrito-subtitulo {
     color: white;
     font-family: 'Sarala', sans-serif;
-    font-weight: 400;
-    font-size: 24px;
+    font-weight: 500;
+    font-size: 20pt;
     cursor: pointer;
     transition: 
-    font-size 350ms ease-in-out;
+    all 550ms ease-in;
 }
 
 .conteudo-principal-escrito-subtitulo:hover {
-    font-size: 25px;
+    color: #57A7FF;
     transition: 
-    font-size 350ms ease-in-out;
+    all 550ms ease-in;
 }
 
 .conteudo-principal-escrito-botao {
@@ -450,15 +483,15 @@ body {
     font-weight: 400;
     font-size: 24px;
     transition: 
-    all 350ms ease-in-out;
+    all 350ms ease-out;
 }
 
 .conteudo-principal-escrito-botao:hover {
     width: 210px;
     height: 60px;
-    background: #0071B5;
+    background: #0aa51f;
     transition: 
-    all 350ms ease-in-out;
+    all 350ms ease-out;
 }
 
 .conteudo-principal-imagem {
