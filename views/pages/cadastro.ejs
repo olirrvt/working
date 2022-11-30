@@ -1,171 +1,130 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <%- include("../partials/head") %>
-  </head>
-  <body>
-    <%- include("../partials/btnVoltar")  %>
 
-    <div class="container-principal">
-      <!-- Outra tela de cadastro -->
+<head>
+  <%- include("../partials/head") %>
+</head>
 
-      <div class="cadastro-formulario">
-        <div class="conteudo-cadastro-secundario">
-          <div class="conteudo-titulo-cadastro">
-            <h1 class="h1-cadastro">
-              Criar nova conta na área de <br />candidato!
-            </h1>
-            <spam style="color: gray">
-              Seja muito bem-vindo! cadastre-se já e aproveite os nossos <br />
-              recursos!
-            </spam>
-          </div>
+<body>
+  <%- include("../partials/btnVoltar") %>
 
-          <form class="formulario-cadastro">
-            <div class="cadastro-dados-01">
-              <div class="area-username">
-                <div id="alerta-username" class="alerta-validation">
-                  <ul id="lista-alerta-username"></ul>
-                </div>
+  <div class="container-principal">
+    <!-- Outra tela de cadastro -->
 
-                <label for="nome">Digite o seu username</label>
-                <br />
-                <input
-                  class="input-cadastro"
-                  type="text"
-                  name="UserName"
-                  value=""
-                  placeholder="Digite o seu nome de usuário..."
-                />
-                <p></p>
+    <div class="cadastro-formulario">
+      <div class="conteudo-cadastro-secundario">
+        <div class="conteudo-titulo-cadastro">
+          <h1 class="h1-cadastro">
+            Criar nova conta na área de <br />candidato!
+          </h1>
+          <spam style="color: gray">
+            Seja muito bem-vindo! cadastre-se já e aproveite os nossos <br />
+            recursos!
+          </spam>
+        </div>
+
+        <form class="formulario-cadastro">
+          <div class="cadastro-dados-01">
+            <div class="area-username">
+              <div id="alerta-username" class="alerta-validation">
+                <ul id="lista-alerta-username"></ul>
               </div>
 
-              <div class="area-email">
-                <div class="alerta-validation" id="alerta"></div>
+              <label for="nome">Digite o seu username</label>
+              <br />
+              <input class="input-cadastro" type="text" name="UserName" value=""
+                placeholder="Digite o seu nome de usuário..." />
+              <p></p>
+            </div>
 
-                <label>Qual é o seu e-mail?</label>
-                <br />
-                <input
-                  class="input-cadastro"
-                  type="email"
-                  name="UserEmail"
-                  value=""
-                  placeholder="Digite o seu email..."
-                />
-                <p></p>
-              </div>
+            <div class="area-email">
+              <div class="alerta-validation" id="alerta"></div>
 
-              <div class="area-senha">
-                <div class="alerta-validation" id="alerta-senha"></div>
+              <label>Qual é o seu e-mail?</label>
+              <br />
+              <input class="input-cadastro" type="email" name="UserEmail" value=""
+                placeholder="Digite o seu email..." />
+              <p></p>
+            </div>
 
-                <label>Digite uma senha</label>
-                <br />
-                <input
-                  class="input-cadastro"
-                  type="password"
-                  name="UserPassword"
-                  value=""
-                  placeholder="Digite uma senha..."
-                />
-                <p></p>
-              </div>
+            <div class="area-senha">
+              <div class="alerta-validation" id="alerta-senha"></div>
 
-              <div class="msg-alert">
-                <div>
-                  <span
-                    style="
+              <label>Digite uma senha</label>
+              <br />
+              <input class="input-cadastro" type="password" name="UserPassword" value=""
+                placeholder="Digite uma senha..." />
+              <p></p>
+            </div>
+
+            <div class="msg-alert">
+                <span style="
                       color: rgb(156, 154, 154);
                       font-family: 'Sarala', sans-serif; ;
-                    "
-                    >Já possui uma conta?
-                    <a
-                      class="link-cadastro"
-                      href="/login"
-                      style="cursor: pointer"
-                    >
-                      Entrar
-                    </a>
-                  </span>
-                </div>
-              </div>
+                    ">Já possui uma conta?
+                  <a class="link-cadastro" href="/login" style="cursor: pointer">
+                    Entrar
+                  </a>
+                </span>
+                <span style="
+                color: rgb(156, 154, 154);
+                font-family: 'Sarala', sans-serif; ;
+              ">Cadastrar como uma empresa?
+                  <a class="link-cadastro" href="/cadastroEmpresa" style="cursor: pointer">
+                    Sim
+                  </a>
+                </span>
             </div>
+          </div>
 
-            <div class="cadastro-dados-02">
-              <div>
-                <div class="area-cep">
-                  <div class="alerta-validation" id="alerta-cep"></div>
+          <div class="cadastro-dados-02">
+            <div>
+              <div class="area-cep">
+                <div class="alerta-validation" id="alerta-cep"></div>
 
-                  <label>CEP</label>
-                  <br />
-                  <input
-                    class="input-cadastro"
-                    type="text"
-                    name="UserCep"
-                    value=""
-                    placeholder="Digite o seu CEP..."
-                  />
-                  <p></p>
-                </div>
-
-                <div class="area-localidade">
-                  <div class="alerta-validation" id="alerta-rg"></div>
-
-                  <label>RG</label>
-                  <br />
-                  <input
-                    class="input-cadastro"
-                    type="number"
-                    name="userRG"
-                    value=""
-                    placeholder="Digite o seu RG..."
-                  />
-                  <p></p>
-                </div>
-
-                <div class="area-uf">
-                  <div class="alerta-validation" id="alerta-cpf"></div>
-
-                  <label>CPF</label>
-                  <br />
-                  <input
-                    class="input-cadastro"
-                    type="number"
-                    name="userCPF"
-                    value=""
-                    placeholder="Digite o seu CPF..."
-                  />
-                  <p></p>
-                </div>
-
-                <a href="/cadastro/progress">
-                  <button
-                    id="btn-cadastro-formulario"
-                    class="button-cadastro"
-                    type="button"
-                    disabled
-                  >
-                    Continuar
-                  </button>
-                </a>
+                <label>CEP</label>
+                <br />
+                <input class="input-cadastro" type="text" name="UserCep" value="" placeholder="Digite o seu CEP..." />
+                <p></p>
               </div>
+
+              <div class="area-localidade">
+                <div class="alerta-validation" id="alerta-rg"></div>
+
+                <label>RG</label>
+                <br />
+                <input class="input-cadastro" type="number" name="userRG" value="" placeholder="Digite o seu RG..." />
+                <p></p>
+              </div>
+
+              <div class="area-uf">
+                <div class="alerta-validation" id="alerta-cpf"></div>
+
+                <label>CPF</label>
+                <br />
+                <input class="input-cadastro" type="number" name="userCPF" value="" placeholder="Digite o seu CPF..." />
+                <p></p>
+              </div>
+
+              <a href="/cadastro/progress">
+                <button id="btn-cadastro-formulario" class="button-cadastro" type="button" disabled>
+                  Continuar
+                </button>
+              </a>
             </div>
-          </form>
-        </div>
+          </div>
+        </form>
       </div>
     </div>
-    <%- include('../partials/vlibras') %>
-  </body>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-    crossorigin="anonymous"
-  ></script>
-  <script src="../../js/script/validation.js"></script>
-  <!-- JavaScript Bundle with Popper -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-    crossorigin="anonymous"
-  ></script>
-  <script src="index.js"></script>
+  </div>
+  <%- include('../partials/vlibras') %>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="../../js/script/validation.js"></script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+
 </html>

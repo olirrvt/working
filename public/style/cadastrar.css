@@ -105,9 +105,9 @@ label {
 
 .msg-alert {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
-  margin-top: 20px;
+  margin: 2rem 0rem 0rem 0rem;
 }
 
 a {

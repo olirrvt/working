@@ -5,34 +5,40 @@ const port = 3040;
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + '/public'));
 
-app.get('/', (request, response) => {
+app.get('/', (req, resp) => {
     const importStyle = "../style/index.css"
     const indexStyle = "../style/entrar.css"
-    response.render('index', { importStyle, indexStyle })
+    resp.render('index', { importStyle, indexStyle })
 });
 
-app.get('/cadastro', (request, response) => {
+app.get('/cadastro', (req, resp) => {
     const importStyle = "../style/cadastrar.css"
     const indexStyle = "../style/index.css"
-    response.render('pages/cadastro', { importStyle, indexStyle })
+    resp.render('pages/cadastro', { importStyle, indexStyle })
 });
 
-app.get('/login', (request, response) => {
+app.get('/login', (req, resp) => {
     const importStyle = "../style/login.css"
     const indexStyle = "../style/index.css"
-    response.render('pages/login', { importStyle, indexStyle })
+    resp.render('pages/login', { importStyle, indexStyle })
 });
 
-app.get('/empresas', (request, response) => {
+app.get('/empresas', (req, resp) => {
     const importStyle = "../style/empresas.css"
     const indexStyle = "../style/index.css"
-    response.render('pages/empresas', { importStyle, indexStyle })
+    resp.render('pages/empresas', { importStyle, indexStyle })
 });
 
-app.get('/vagas', (request, response) => {
+app.get('/cadastroEmpresa', (req, res) => {
+    const importStyle = "../style/cadastroEmpresa.css"
+    const indexStyle = "../style/index.css"
+    res.render('pages/cadastroEmpresa', { importStyle, indexStyle });
+});
+
+app.get('/vagas', (req, resp) => {
     const importStyle = "../style/vagas.css"
     const indexStyle = "../style/index.css"
-    response.render('pages/vagas', {importStyle, indexStyle})
+    resp.render('pages/vagas', {importStyle, indexStyle})
 });
 
 app.listen(port, () => {
