@@ -24,6 +24,7 @@
             <label>E-mail</label>
             <br />
             <input
+              id="email-user"
               class="input-login"
               type="email"
               name="UserEmail"
@@ -35,6 +36,7 @@
             <label for="passwordUser">Senha</label>
             <br />
             <input
+              id="senha-user"
               class="input-login"
               type="password"
               name="passwordUser"
@@ -43,7 +45,6 @@
             />
             <p></p>
 
-            <a href="/login2">
               <button
                 id="btn-login-formulario"
                 class="button-login"
@@ -51,7 +52,7 @@
               >
                 Continuar
               </button>
-            </a>
+
           </form>
         </div>
 
@@ -72,5 +73,6 @@
       </div>
     </div>
     <%- include('../partials/vlibras') %>
+    <script src="../../js/fetch/login.js"></script>
   </body>
 </html>
