@@ -138,7 +138,7 @@ label {
     background-color: #ECF0F1;
     border: none;
     height: 2rem;
-    padding: 1rem;
+    padding: 0 2px 1px 9px;
 }
 
 .input-cadastro::placeholder {
@@ -171,4 +171,28 @@ label {
     background-color: #008000;
     border: 2px solid #008000;
     transition: all 450ms;
+}
+
+/* Input de senha */
+
+.container-password {
+    display: flex;
+    flex-direction: row;
+}
+
+.img-password {
+    position: relative;
+    left: 0.9rem;
+    width: 3vh;
+    height: 3vh;
+    cursor: pointer;
+}
+
+.caixa-img-password {
+    background-color: #ECF0F1;
+    border: none;
+    border-left: 2px solid #0071B5;
+    height: 2rem;
+    width: 3.4rem;
+    padding-top: 4px;
 }

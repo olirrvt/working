@@ -69,8 +69,28 @@ const validarSenhaEmpresa = () => {
     });
 };
 
+const viewImg = document.querySelector("#view-eye");
+
+const viewPassword = () => {
+    viewImg.addEventListener("mousedown", () => {
+        const senhaEmpresa = inputFormEmpresa[3];
+        senhaEmpresa.type = "text"
+        viewImg.src = "../../img/hidden.png"
+    });
+};
+
+const hidePassword = () => {
+    viewImg.addEventListener("mouseup", () => {
+        const senhaEmpresa = inputFormEmpresa[3];
+        senhaEmpresa.type = "password"
+        viewImg.src = "../../img/eye.png"
+    });
+};
+
 document.addEventListener("DOMContentLoaded", () => {
     validarNomeEmpresa();
     validarEmailEmpresa();
     validarSenhaEmpresa();
+    viewPassword();
+    hidePassword();
 });
