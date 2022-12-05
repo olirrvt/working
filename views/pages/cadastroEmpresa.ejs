@@ -17,7 +17,7 @@
                     </div>
 
                     <div class="conteudo-escrito-descricao">
-                        Cadastre a sua empresa, ou faça login se já estiver, <br> para aproveitar os nossos serviços!
+                        Cadastre a sua empresa, ou faça login, <br> para aproveitar os nossos serviços!
                     </div>
 
                     <div class="conteudo-botao-logar">
@@ -47,14 +47,37 @@
                     <div class="container-formulario">
                         <form class="formulario-cadastro">
 
+                            <span class="alerta-cadastro" id="alerta-nomeEmpresa">
+                                <img class="icone-de-aviso" src="../../img/aviso.png" alt="icone-de-aviso">
+                                <div class="mensagem-de-erro-input" id="aviso-nomeEmpresa"></div>
+                            </span>
+
                             <label for="">Informe o nome da sua empresa:</label>
-                            <input type="text" class="input-cadastro" name="empresa-nome" id="empresa-nome" placeholder="Digite o nome da sua empresa...">
+                            <input type="text" class="input-cadastro" name="empresa-nome"
+                            id="empresa-nome" 
+                            placeholder="Digite o nome da sua empresa..."
+                            maxlength="15">
+
+                            <span class="alerta-cadastro" id="alerta-emailEmpresa">
+                                <img class="icone-de-aviso" src="../../img/aviso.png" alt="icone-de-aviso">
+                                <div class="mensagem-de-erro-input" id="aviso-emailEmpresa"></div>
+                            </span>
 
                             <label for="">Informe o email da sua empresa:</label>
                             <input type="text" class="input-cadastro" name="empresa-email" id="empresa-email" placeholder="Digite o email da sua empresa...">
 
+                            <span class="alerta-cadastro" id="alerta-senhaEmpresa">
+                                <img class="icone-de-aviso" src="../../img/aviso.png" alt="icone-de-aviso">
+                                <div class="mensagem-de-erro-input" id="aviso-senhaEmpresa"></div>
+                            </span>
+
                             <label for="">Informe a senha:</label>
                             <input type="password" class="input-cadastro" name="empresa-senha" id="empresa-senha" placeholder="Digite a senha que deseja...">
+
+                            <span class="alerta-cadastro" id="alerta-cnpjEmpresa">
+                                <img class="icone-de-aviso" src="../../img/aviso.png" alt="icone-de-aviso">
+                                <div class="mensagem-de-erro-input" id="aviso-cnpjEmpresa"></div>
+                            </span>
 
                             <label for="">Informe o cnpj da sua empresa:</label>
                             <input type="text" class="input-cadastro" name="empresa-cnpj" id="empresa-cnpj" placeholder="Digite o cnpj da sua empresa...">
@@ -78,6 +101,7 @@
 
         <%- include('../partials/vlibras') %>  
     <!--<%- include('../partials/footer') %>-->
+<script src="../../js/controllers/empresa/validationEmpresa.js"></script>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 <!-- JavaScript Bundle with Popper -->
