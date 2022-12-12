@@ -45,6 +45,13 @@ Inicie o servidor
   npm run dev
 ```
 
+Acesse no seu navegador
+
+```bash
+http://localhost:3040/  
+```
+
+Caso seja necessário mudar a porta, acesse o `index.js`
 
 ## FAQ
 
